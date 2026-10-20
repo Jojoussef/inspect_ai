@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.3.283](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.282...0.3.283) (2026-10-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Perplexity requests failing after Sonar moved to the Agent API ([#5703](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5703))
+
+### Features
+
+* record bridged host tool calls as tool events in the transcript ([#5741](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5741)) ([d90a8a0](https://github.com/UKGovernmentBEIS/inspect_ai/commit/d90a8a0d335a7821abeff5f1b61e9f43f5120c06))
+* **sentinel:** tool steps carry the id of the message that made the call and its request's tool choice ([#5964](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5964)) ([c90c3a1](https://github.com/UKGovernmentBEIS/inspect_ai/commit/c90c3a1bf0be223393dcd0732e5ebc9e4c4222df))
+
+
+### Bug Fixes
+
+* a span that raises or is cancelled logs its own store changes ([#5961](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5961)) ([5603856](https://github.com/UKGovernmentBEIS/inspect_ai/commit/560385640e12a59b417275e660f1ce40f4f2a783))
+* charge working time for model calls, sandbox commands and tool calls that run while another task waits ([#5880](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5880)) ([1579809](https://github.com/UKGovernmentBEIS/inspect_ai/commit/157980923b2993d2496a8d150c81f32465f15991))
+* Groq and Mistral send a tool error to the model ([#5882](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5882)) ([eda5bcb](https://github.com/UKGovernmentBEIS/inspect_ai/commit/eda5bcbaeadbf14deb9bfc977fec2df4367ac223))
+* Perplexity requests failing after Sonar moved to the Agent API ([#5703](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5703)) ([4a4f7ea](https://github.com/UKGovernmentBEIS/inspect_ai/commit/4a4f7ea76fd695dbdd0824cd22ffd002b8cbe45a))
+* warn when a sample or task sandbox config is not used ([#5736](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5736)) ([6bfa187](https://github.com/UKGovernmentBEIS/inspect_ai/commit/6bfa187cd4e9909222bdb1d9e67549b30f9b89dc))
+* write checkpoint attachments.json in insertion order so restic can deduplicate it ([#5967](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5967)) ([22141c9](https://github.com/UKGovernmentBEIS/inspect_ai/commit/22141c91d80528e729123f6aac287566334367a9))
+
+
+### Performance Improvements
+
+* make repeated inspect ctl --log-dir polls read only the logs that changed ([#5776](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5776)) ([973cf79](https://github.com/UKGovernmentBEIS/inspect_ai/commit/973cf7925abefd248c86f4638fad0ddd5d9b97d7))
+
 ## [0.3.282](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.281...0.3.282) (2026-10-19)
 
 
