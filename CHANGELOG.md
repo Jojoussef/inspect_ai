@@ -3,7 +3,7 @@
 ## [0.3.283](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.282...0.3.283) (2026-10-20)
 
 
-### ⚠ BREAKING CHANGES
+### Breaking Changes
 
 * Perplexity requests failing after Sonar moved to the Agent API ([#5703](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5703))
 
